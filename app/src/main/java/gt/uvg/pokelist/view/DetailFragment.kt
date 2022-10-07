@@ -23,9 +23,9 @@ class DetailFragment : Fragment() {
         val id: Int = list.pokemonId
 
         Picasso.get().load(Pokemon(id, "required").imageUrlFront).into(imageview2)
-        Picasso.get().load(Pokemon(id, "required").imageUrlFront).into(imageview3)
-        Picasso.get().load(Pokemon(id, "required").imageUrlFront).into(imageview4)
-        Picasso.get().load(Pokemon(id, "required").imageUrlFront).into(imageview5)
+        Picasso.get().load(Pokemon(id, "required").imageUrlBack).into(imageview3)
+        Picasso.get().load(Pokemon(id, "required").imageUrlShinnyFront).into(imageview4)
+        Picasso.get().load(Pokemon(id, "required").imageUrlShinnyBack).into(imageview5)
 
         return view
     }
